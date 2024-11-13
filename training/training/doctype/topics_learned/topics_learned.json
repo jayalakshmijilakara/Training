@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-08 11:23:37.426888",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "files",
+  "module_name",
+  "description",
+  "exam_on_accounts",
+  "exam_on_manufacturing",
+  "exam_on_buying_module",
+  "exam_on_sales_module"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "files",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Files",
+   "options": "Resource Files",
+   "reqd": 1
+  },
+  {
+   "fieldname": "module_name",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Module Name",
+   "options": "\nSales\nBuying\nAccounts\nManufacturing\nUser Permissions",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.module_name == 'Accounts'",
+   "fieldname": "exam_on_accounts",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Exam On Accounts",
+   "mandatory_depends_on": "eval:doc.module_name == 'Accounts'",
+   "options": "Accounts Module Questions"
+  },
+  {
+   "depends_on": "eval:doc.module_name == 'Manufacturing'",
+   "fieldname": "exam_on_manufacturing",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Exam On Manufacturing",
+   "mandatory_depends_on": "eval:doc.module_name == 'Manufacturing'",
+   "options": "Manufacturing Module Questions"
+  },
+  {
+   "depends_on": "eval:doc.module_name == 'Buying'",
+   "fieldname": "exam_on_buying_module",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Exam On Buying Module",
+   "mandatory_depends_on": "eval:doc.module_name == 'Buying'",
+   "options": "Buying Module Questions"
+  },
+  {
+   "depends_on": "eval:doc.module_name == 'Sales'",
+   "fieldname": "exam_on_sales_module",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Exam On Sales Module",
+   "mandatory_depends_on": "eval:doc.module_name == 'Sales'",
+   "options": "Sales Module Questions"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-11 16:19:10.613154",
+ "modified_by": "Administrator",
+ "module": "Training",
+ "name": "Topics Learned",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

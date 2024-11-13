@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2024-11-08 11:40:06.271551",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_aiqo",
+  "files",
+  "amended_from",
+  "column_break_htdl",
+  "module_name",
+  "exam_on_accounts",
+  "exam_on_manufacturing",
+  "exam_on_buying_module",
+  "exam_on_sales_module"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_aiqo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "files",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Files",
+   "options": "Resource Files",
+   "reqd": 1
+  },
+  {
+   "fieldname": "module_name",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Module Name",
+   "options": "\nSales\nBuying\nAccounts\nManufacturing\nUser Permissions",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Topic",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "depends_on": "eval:doc.module_name == 'Sales'",
+   "fieldname": "exam_on_sales_module",
+   "fieldtype": "Link",
+   "label": "Exam On Sales Module",
+   "mandatory_depends_on": "eval:doc.module_name == 'Sales'",
+   "options": "Sales Module Questions"
+  },
+  {
+   "depends_on": "eval:doc.module_name == 'Buying'",
+   "fieldname": "exam_on_buying_module",
+   "fieldtype": "Link",
+   "label": "Exam On Buying Module",
+   "mandatory_depends_on": "eval:doc.module_name == 'Buying'",
+   "options": "Buying Module Questions"
+  },
+  {
+   "depends_on": "eval:doc.module_name == 'Accounts'",
+   "fieldname": "exam_on_accounts",
+   "fieldtype": "Link",
+   "label": "Exam On Accounts",
+   "mandatory_depends_on": "eval:doc.module_name == 'Accounts'",
+   "options": "Accounts Module Questions"
+  },
+  {
+   "depends_on": "eval:doc.module_name == 'Manufacturing'",
+   "fieldname": "exam_on_manufacturing",
+   "fieldtype": "Link",
+   "label": "Exam On Manufacturing",
+   "mandatory_depends_on": "eval:doc.module_name == 'Manufacturing'",
+   "options": "Manufacturing Module Questions"
+  },
+  {
+   "fieldname": "column_break_htdl",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-11-11 14:50:04.541596",
+ "modified_by": "Administrator",
+ "module": "Training",
+ "name": "Topic",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
