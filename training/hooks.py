@@ -10,7 +10,11 @@ app_license = "mit"
 
 
 doctype_js = { 
-    "Topic" : "public/js/topic.js" 
+    "Training" : "public/js/training.js" ,
+    "Sales Module Questions" : "public/js/sales_exam.js" ,
+    "Buying Module Questions" : "public/js/buy_exam.js" ,
+     "Accounts Module Questions" : "public/js/account_exam.js" ,
+      "Manufacturing Module Questions" : "public/js/manufacture_exam.js" ,
 }
 
 # required_apps = []

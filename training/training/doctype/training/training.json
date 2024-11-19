@@ -43,8 +43,11 @@
   {
    "fieldname": "employee",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Employee",
-   "options": "Employee"
+   "options": "Employee",
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fetch_from": "employee.employee_name",
@@ -88,7 +91,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-11-11 15:36:30.402728",
+ "modified": "2024-11-19 16:16:45.784736",
  "modified_by": "Administrator",
  "module": "Training",
  "name": "Training",
