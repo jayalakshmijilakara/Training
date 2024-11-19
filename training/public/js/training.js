@@ -13,3 +13,100 @@ frappe.ui.form.on('Training', {
         }
     }
 });
+
+frappe.ui.form.on('Training', {
+    before_workflow_action: async (frm) => {
+        let workflow_action = frm.selected_workflow_action;
+
+        if (workflow_action === 'Reject') {
+          
+            if (!frm.doc.reason_for_rejection) {
+               
+                frm.toggle_display('reason_for_rejection', true);
+
+                
+                frappe.dom.unfreeze();
+                const promptPromise = new Promise((resolve, reject) => {
+                    frappe.prompt(
+                        [
+                            {
+                                fieldtype: 'Data',
+                                label: 'Reason for Rejection',
+                                fieldname: 'rejection_reason',
+                                reqd: 1
+                            }
+                        ],
+                        (values) => {
+                            
+                            frm.set_value('reason_for_rejection', values.rejection_reason);
+                            resolve(values.rejection_reason);
+                        },
+                        'Enter Rejection Reason',
+                        'Submit'
+                    );
+                });
+
+                
+                await promptPromise;
+
+                
+                await frm.save();
+            }
+        }
+    },
+    
+    refresh: function(frm) {
+
+        frm.toggle_display('reason_for_rejection', frm.doc.workflow_state === 'Rejected');
+    }
+});
+
+
+
+frappe.ui.form.on('Training', {
+    before_workflow_action: async (frm) => {
+        let workflow_action = frm.selected_workflow_action;
+
+        if (workflow_action === 'Send for Review') {
+          
+            if (!frm.doc.reason_for_rejection) {
+               
+                frm.toggle_display('reason_for_review', true);
+
+                
+                frappe.dom.unfreeze();
+                const promptPromise = new Promise((resolve, reject) => {
+                    frappe.prompt(
+                        [
+                            {
+                                fieldtype: 'Data',
+                                label: 'Reason for Review',
+                                fieldname: 'review_reason',
+                                reqd: 1
+                            }
+                        ],
+                        (values) => {
+                            
+                            frm.set_value('reason_for_review', values.review_reason);
+                            resolve(values.review_reason);
+                        },
+                        'Enter Review Reason',
+                        'Submit'
+                    );
+                });
+
+                
+                await promptPromise;
+
+                
+                await frm.save();
+            }
+        }
+    },
+    
+    refresh: function(frm) {
+      
+        frm.toggle_display('reason_for_review', true);
+    }
+});
+

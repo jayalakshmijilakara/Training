@@ -9,6 +9,8 @@
   "section_break_q0rq",
   "amended_from",
   "company",
+  "reason_for_rejection",
+  "reason_for_review",
   "column_break_wvui",
   "employee",
   "employee_name",
@@ -86,12 +88,24 @@
    "fieldname": "description",
    "fieldtype": "Text Editor",
    "label": "Description"
+  },
+  {
+   "fieldname": "reason_for_rejection",
+   "fieldtype": "Small Text",
+   "label": "Reason for Rejection",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reason_for_review",
+   "fieldtype": "Small Text",
+   "label": "Reason for Review",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-11-19 16:16:45.784736",
+ "modified": "2024-11-19 16:56:50.578537",
  "modified_by": "Administrator",
  "module": "Training",
  "name": "Training",
