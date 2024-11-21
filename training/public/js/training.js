@@ -110,3 +110,24 @@ frappe.ui.form.on('Training', {
     }
 });
 
+
+frappe.ui.form.on('Topics Learned', {
+    
+    date: function(frm, cdt, cdn) {
+        validate_dates(frm, cdt, cdn);
+    },
+    to_date: function(frm, cdt, cdn) {
+        validate_dates(frm, cdt, cdn);
+    }
+});
+
+function validate_dates(frm, cdt, cdn) {
+    const row = locals[cdt][cdn];
+    const from_date = row.date;
+    const to_date = row.to_date;
+
+    if (from_date && to_date && to_date < from_date) {
+        frappe.throw(__('To Date cannot be less than From Date.'));
+    }
+}
+
