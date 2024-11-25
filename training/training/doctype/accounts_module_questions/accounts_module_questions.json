@@ -6,26 +6,129 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "multiple_choice_questions_mcqs_section",
+  "mc1",
+  "mc3",
+  "column_break_jnlh",
+  "mc2",
   "section_break_tzqy",
-  "how_do_you_set_up_and_manage_fiscal_years_in_erpnext"
+  "saq1",
+  "saq3",
+  "column_break_sqwj",
+  "saq2",
+  "section_break_hnhb",
+  "trf1",
+  "column_break_pjzu",
+  "you_can_edit_a_posted_journal_entry_after_it_has_been_submitted",
+  "practical_questions_section",
+  "pq1",
+  "pq2"
  ],
  "fields": [
   {
    "fieldname": "section_break_tzqy",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Short Answer Questions"
+  },
+  {
+   "fieldname": "multiple_choice_questions_mcqs_section",
+   "fieldtype": "Section Break",
+   "label": "Multiple Choice Questions (MCQs)"
+  },
+  {
+   "fieldname": "column_break_jnlh",
+   "fieldtype": "Column Break"
   },
   {
    "description": "The response needs to be longer than 50 characters.",
-   "fieldname": "how_do_you_set_up_and_manage_fiscal_years_in_erpnext",
+   "fieldname": "saq1",
    "fieldtype": "Small Text",
-   "in_list_view": 1,
-   "label": "How do you set up and manage fiscal years in ERPNext?",
+   "in_list_view": 0,
+   "label": "1) Explain the purpose of a \"Payment Entry\" in ERPNext.",
+   "reqd": 1
+  },
+  {
+   "description": "The response needs to be longer than 50 characters.",
+   "fieldname": "saq2",
+   "fieldtype": "Small Text",
+   "label": "2) What is a \"Fiscal Year,\" and how is it set up in ERPNext?",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_sqwj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "The response needs to be longer than 50 characters.",
+   "fieldname": "saq3",
+   "fieldtype": "Small Text",
+   "label": "3) Describe the process of creating a Sales Invoice in ERPNext.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_hnhb",
+   "fieldtype": "Section Break",
+   "label": "True or False"
+  },
+  {
+   "default": "0",
+   "fieldname": "trf1",
+   "fieldtype": "Check",
+   "label": "In ERPNext, every financial transaction must be recorded through a Journal Entry."
+  },
+  {
+   "default": "0",
+   "fieldname": "you_can_edit_a_posted_journal_entry_after_it_has_been_submitted",
+   "fieldtype": "Check",
+   "label": " You can edit a posted Journal Entry after it has been submitted."
+  },
+  {
+   "fieldname": "column_break_pjzu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "practical_questions_section",
+   "fieldtype": "Section Break",
+   "label": "Practical Questions"
+  },
+  {
+   "fieldname": "pq1",
+   "fieldtype": "Small Text",
+   "label": "Given a set of transactions, demonstrate how to create a Journal Entry in ERPNext."
+  },
+  {
+   "fieldname": "pq2",
+   "fieldtype": "Small Text",
+   "label": "Show how to generate a Profit and Loss report for a specific period in ERPNext."
+  },
+  {
+   "description": "A) To track inventory. \n B) To categorize financial transactions.\n C) To manage user access.\n D) To generate sales reports.",
+   "fieldname": "mc1",
+   "fieldtype": "Data",
+   "in_list_view": 0,
+   "label": "1) What is the primary function of the Chart of Accounts in ERPNext?",
+   "reqd": 1
+  },
+  {
+   "description": "A) Journal Entry.\nB) Sales Invoice.\nC) Purchase Order.\nD) Payment Entry.",
+   "fieldname": "mc2",
+   "fieldtype": "Data",
+   "in_list_view": 0,
+   "label": "2) Which of the following document types is NOT part of the accounting module in ERPNext?",
+   "reqd": 1
+  },
+  {
+   "description": "A) A record of customer payments.\nB) A summary of bank transactions.\nC) A way to record financial transactions in a double-entry format.\nD) A report of sales data.",
+   "fieldname": "mc3",
+   "fieldtype": "Data",
+   "in_list_view": 0,
+   "label": "3) In ERPNext, what is a \"Journal Entry\"?",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-19 16:26:48.386424",
+ "modified": "2024-11-25 16:48:59.210974",
  "modified_by": "Administrator",
  "module": "Training",
  "name": "Accounts Module Questions",
