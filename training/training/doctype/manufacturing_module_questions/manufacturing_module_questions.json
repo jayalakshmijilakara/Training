@@ -7,25 +7,109 @@
  "engine": "InnoDB",
  "field_order": [
   "section_break_clys",
-  "how_do_you_create_and_manage_a_bill_of_materials_bom_in_erpnext"
+  "mcq1",
+  "mcq2",
+  "column_break_jhdf",
+  "mcq3",
+  "section_break_jafi",
+  "trf1",
+  "column_break_mohp",
+  "trf2",
+  "section_break_ctbe",
+  "saq2",
+  "column_break_ixaw",
+  "saq1",
+  "amended_from"
  ],
  "fields": [
   {
    "fieldname": "section_break_clys",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Multiple Choice Questions (MCQs)"
+  },
+  {
+   "description": "A) Track sales orders\nB) Manage stock levels\nC) Plan and manage production processes\nD) Generate financial reports",
+   "fieldname": "mcq1",
+   "fieldtype": "Data",
+   "in_list_view": 0,
+   "label": "1) What is the primary purpose of the Manufacturing Module in ERPNext?",
+   "reqd": 1
+  },
+  {
+   "description": "A) Item Code\nB) BOM (Bill of Materials)\nC) Production Resources (Workstations, Employees)\nD) All of the above",
+   "fieldname": "mcq2",
+   "fieldtype": "Data",
+   "label": "3) Which of the following is required to create a Manufacturing Order in ERPNext?",
+   "reqd": 1
+  },
+  {
+   "description": "A) The cost price of raw materials\nB) The list of raw materials required to manufacture a product\nC) The list of finished goods\nD) The production schedule for an item",
+   "fieldname": "mcq3",
+   "fieldtype": "Data",
+   "label": "2) In ERPNext, a Bill of Materials (BOM) is used to define:",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_jhdf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_jafi",
+   "fieldtype": "Section Break",
+   "label": "True or False"
+  },
+  {
+   "default": "0",
+   "fieldname": "trf1",
+   "fieldtype": "Check",
+   "label": "A Manufacturing Order (MO) in ERPNext is created automatically when a Sales Order is placed."
+  },
+  {
+   "default": "0",
+   "fieldname": "trf2",
+   "fieldtype": "Check",
+   "label": "In ERPNext, you can set multiple manufacturing workstations to produce the same item."
+  },
+  {
+   "fieldname": "column_break_mohp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ctbe",
+   "fieldtype": "Section Break",
+   "label": "Short Answer Questions"
   },
   {
    "description": "The response needs to be longer than 50 characters.",
-   "fieldname": "how_do_you_create_and_manage_a_bill_of_materials_bom_in_erpnext",
+   "fieldname": "saq1",
    "fieldtype": "Small Text",
-   "in_list_view": 1,
-   "label": "How do you create and manage a Bill of Materials (BOM) in ERPNext?",
-   "reqd": 1
+   "label": "Explain the process to create a Manufacturing Order in ERPNext."
+  },
+  {
+   "description": "The response needs to be longer than 50 characters.",
+   "fieldname": "saq2",
+   "fieldtype": "Small Text",
+   "label": "What is the difference between a Work Order and a Manufacturing Order in ERPNext?"
+  },
+  {
+   "fieldname": "column_break_ixaw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Manufacturing Module Questions",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-11-19 16:26:59.531785",
+ "modified": "2024-11-26 10:07:06.641595",
  "modified_by": "Administrator",
  "module": "Training",
  "name": "Manufacturing Module Questions",

@@ -22,7 +22,8 @@
   "you_can_edit_a_posted_journal_entry_after_it_has_been_submitted",
   "practical_questions_section",
   "pq1",
-  "pq2"
+  "pq2",
+  "amended_from"
  ],
  "fields": [
   {
@@ -43,16 +44,13 @@
    "description": "The response needs to be longer than 50 characters.",
    "fieldname": "saq1",
    "fieldtype": "Small Text",
-   "in_list_view": 0,
-   "label": "1) Explain the purpose of a \"Payment Entry\" in ERPNext.",
-   "reqd": 1
+   "label": "1) Explain the purpose of a \"Payment Entry\" in ERPNext."
   },
   {
    "description": "The response needs to be longer than 50 characters.",
    "fieldname": "saq2",
    "fieldtype": "Small Text",
-   "label": "2) What is a \"Fiscal Year,\" and how is it set up in ERPNext?",
-   "reqd": 1
+   "label": "2) What is a \"Fiscal Year,\" and how is it set up in ERPNext?"
   },
   {
    "fieldname": "column_break_sqwj",
@@ -62,8 +60,7 @@
    "description": "The response needs to be longer than 50 characters.",
    "fieldname": "saq3",
    "fieldtype": "Small Text",
-   "label": "3) Describe the process of creating a Sales Invoice in ERPNext.",
-   "reqd": 1
+   "label": "3) Describe the process of creating a Sales Invoice in ERPNext."
   },
   {
    "fieldname": "section_break_hnhb",
@@ -124,11 +121,22 @@
    "in_list_view": 0,
    "label": "3) In ERPNext, what is a \"Journal Entry\"?",
    "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Accounts Module Questions",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-11-25 16:48:59.210974",
+ "modified": "2024-11-26 10:29:46.078671",
  "modified_by": "Administrator",
  "module": "Training",
  "name": "Accounts Module Questions",

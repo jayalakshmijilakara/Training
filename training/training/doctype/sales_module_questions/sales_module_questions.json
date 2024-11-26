@@ -6,34 +6,116 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "multiple_choice_questions_mcqs_section",
+  "mcq1",
+  "column_break_qfsy",
+  "mcq2",
+  "truefalse_questions_section",
+  "trf1",
+  "column_break_mvna",
+  "trf2",
+  "section_break_jhla",
+  "saq1",
+  "column_break_ujrg",
+  "saq2",
   "section_break_kotl",
   "creating_customer",
-  "creating_so"
+  "amended_from"
  ],
  "fields": [
   {
    "fieldname": "section_break_kotl",
-   "fieldtype": "Section Break"
-  },
-  {
-   "description": "The response needs to be longer than 50 characters.",
-   "fieldname": "creating_so",
-   "fieldtype": "Small Text",
-   "in_list_view": 1,
-   "label": "What is the process for creating a sales order in ERPNext?",
-   "reqd": 1
+   "fieldtype": "Section Break",
+   "label": "Practical Task"
   },
   {
    "description": "The response needs to be longer than 50 characters.",
    "fieldname": "creating_customer",
    "fieldtype": "Small Text",
-   "label": "How can you add and manage customer information in ERPNext?",
+   "label": "Create a Sales Order for a customer, including at least three different items, and demonstrate how to convert it into a Sales Invoice."
+  },
+  {
+   "fieldname": "multiple_choice_questions_mcqs_section",
+   "fieldtype": "Section Break",
+   "label": "Multiple Choice Questions (MCQs)"
+  },
+  {
+   "description": "    A) To track inventory.\n    B) To record customer inquiries.\n    C) To confirm a customer's purchase intent.\n    D) To generate invoices.\n\n",
+   "fieldname": "mcq1",
+   "fieldtype": "Data",
+   "in_list_view": 0,
+   "label": "What is the primary purpose of the Sales Order in ERPNext?",
    "reqd": 1
+  },
+  {
+   "description": "A) Quotation.\nB) Sales Invoice.\nC) Delivery Note.\nD) Payment Entry.",
+   "fieldname": "mcq2",
+   "fieldtype": "Data",
+   "in_list_view": 0,
+   "label": "Which document is generated after a Sales Order is confirmed?",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_qfsy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "truefalse_questions_section",
+   "fieldtype": "Section Break",
+   "label": "True/False Questions"
+  },
+  {
+   "default": "0",
+   "fieldname": "trf1",
+   "fieldtype": "Check",
+   "label": "A Sales Invoice can be created without a corresponding Sales Order."
+  },
+  {
+   "fieldname": "column_break_mvna",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "trf2",
+   "fieldtype": "Check",
+   "label": "The Sales module can only be accessed by the Finance team."
+  },
+  {
+   "fieldname": "section_break_jhla",
+   "fieldtype": "Section Break",
+   "label": "Short Answer Questions"
+  },
+  {
+   "description": "The response needs to be longer than 50 characters.\n\n",
+   "fieldname": "saq1",
+   "fieldtype": "Small Text",
+   "label": "Describe the steps to create a Sales Order in ERPNext."
+  },
+  {
+   "description": "The response needs to be longer than 50 characters.",
+   "fieldname": "saq2",
+   "fieldtype": "Small Text",
+   "label": "What are the benefits of using Sales Analytics in ERPNext?"
+  },
+  {
+   "fieldname": "column_break_ujrg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Sales Module Questions",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-11-19 16:26:12.093149",
+ "modified": "2024-11-26 10:26:03.327498",
  "modified_by": "Administrator",
  "module": "Training",
  "name": "Sales Module Questions",

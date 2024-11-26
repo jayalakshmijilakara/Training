@@ -7,15 +7,17 @@
  "engine": "InnoDB",
  "field_order": [
   "file",
+  "pdf",
   "youtube_link"
  ],
  "fields": [
   {
    "allow_in_quick_entry": 1,
+   "default": "https://drive.google.com/drive/folders/13xRqwedGE_HHjeGBNsa2zD1StG1t68uk",
    "fieldname": "file",
    "fieldtype": "Attach",
    "in_list_view": 1,
-   "label": "Documentation",
+   "label": "Drive URL",
    "reqd": 1
   },
   {
@@ -23,11 +25,17 @@
    "fieldname": "youtube_link",
    "fieldtype": "Data",
    "label": "Youtube Link"
+  },
+  {
+   "fieldname": "pdf",
+   "fieldtype": "Attach",
+   "label": "PDF",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-11 10:45:20.628986",
+ "modified": "2024-11-25 10:40:12.758024",
  "modified_by": "Administrator",
  "module": "Training",
  "name": "Resource Files",

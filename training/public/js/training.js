@@ -57,7 +57,7 @@ frappe.ui.form.on('Training', {
     
     refresh: function(frm) {
 
-        frm.toggle_display('reason_for_rejection', frm.doc.workflow_state === 'Rejected');
+        frm.toggle_display('reason_for_rejection', true);
     }
 });
 

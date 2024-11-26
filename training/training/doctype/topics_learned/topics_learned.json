@@ -45,7 +45,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Module Name",
-   "options": "\nAccounts\nBuying\nManufacturing\nSales\nUser Permissions",
+   "options": "\nAccounts\nBuying\nCompany Setup Guide Book\nCRM\nData Import Tool\nEmployee LifeCycle\nERP Installation\nManufacturing\nSales\nUser Permissions",
    "reqd": 1
   },
   {
@@ -95,7 +95,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-11-20 11:47:22.569203",
+ "modified": "2024-11-25 10:54:02.203162",
  "modified_by": "Administrator",
  "module": "Training",
  "name": "Topics Learned",

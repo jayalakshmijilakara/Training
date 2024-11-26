@@ -6,26 +6,125 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_t609",
-  "creating_supplier"
+  "section_break_augj",
+  "mcq1",
+  "mcq2",
+  "column_break_dxvx",
+  "mcq3",
+  "section_break_oucr",
+  "trf1",
+  "column_break_gbfp",
+  "trf2",
+  "section_break_ilvv",
+  "saq1",
+  "column_break_hkyw",
+  "saq2",
+  "practical_tasks_section",
+  "pt",
+  "amended_from"
  ],
  "fields": [
   {
-   "fieldname": "section_break_t609",
-   "fieldtype": "Section Break"
+   "fieldname": "section_break_augj",
+   "fieldtype": "Section Break",
+   "label": "Multiple Choice Questions (MCQs)"
+  },
+  {
+   "description": "A) To manage customer relationships.\nB) To handle procurement and vendor management.\nC) To track sales and revenue.\nD) To manage employee records.",
+   "fieldname": "mcq1",
+   "fieldtype": "Data",
+   "in_list_view": 0,
+   "label": "1) What is the primary purpose of the Buying module in ERPNext?",
+   "reqd": 1
+  },
+  {
+   "description": "A) Purchase Order\nB) Purchase Invoice\nC) Supplier Quotation\nD) Delivery Note",
+   "fieldname": "mcq2",
+   "fieldtype": "Data",
+   "in_list_view": 0,
+   "label": "3) Which document is typically created first in the purchasing process?",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_dxvx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "A) Customer Name\nB) Item Code\nC) Supplier Name\nD) Payment Terms",
+   "fieldname": "mcq3",
+   "fieldtype": "Data",
+   "in_list_view": 0,
+   "label": "2) In ERPNext, which field is essential for creating a Purchase Order?",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_oucr",
+   "fieldtype": "Section Break",
+   "label": "True/False Questions"
+  },
+  {
+   "default": "0",
+   "fieldname": "trf1",
+   "fieldtype": "Check",
+   "label": " A Purchase Invoice can be created without a Purchase Order."
+  },
+  {
+   "fieldname": "column_break_gbfp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "trf2",
+   "fieldtype": "Check",
+   "label": "The Buying module in ERPNext allows you to track the status of your purchase orders."
+  },
+  {
+   "fieldname": "section_break_ilvv",
+   "fieldtype": "Section Break",
+   "label": "Short Answer Questions"
   },
   {
    "description": "The response needs to be longer than 50 characters.",
-   "fieldname": "creating_supplier",
+   "fieldname": "saq1",
    "fieldtype": "Small Text",
-   "in_list_view": 1,
-   "label": "How can you add and manage supplier information in ERPNext?",
-   "reqd": 1
+   "label": "List three key benefits of using the Buying module in ERPNext."
+  },
+  {
+   "description": "The response needs to be longer than 50 characters.",
+   "fieldname": "saq2",
+   "fieldtype": "Small Text",
+   "label": "Describe the process of converting a Supplier Quotation into a Purchase Order."
+  },
+  {
+   "fieldname": "column_break_hkyw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "practical_tasks_section",
+   "fieldtype": "Section Break",
+   "label": "Practical Tasks"
+  },
+  {
+   "description": "The response needs to be longer than 50 characters.(Document each step taken during the process.)",
+   "fieldname": "pt",
+   "fieldtype": "Small Text",
+   "label": "Create a Purchase Order in ERPNext for a specific item, including supplier details and item quantities."
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Buying Module Questions",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-11-19 16:26:36.914682",
+ "modified": "2024-11-26 10:18:06.271340",
  "modified_by": "Administrator",
  "module": "Training",
  "name": "Buying Module Questions",
