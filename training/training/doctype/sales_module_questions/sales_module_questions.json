@@ -46,7 +46,7 @@
    "fieldname": "mcq1",
    "fieldtype": "Data",
    "in_list_view": 0,
-   "label": "What is the primary purpose of the Sales Order in ERPNext?",
+   "label": "What is the primary purpose of the Sales Order in SimpelERP?",
    "reqd": 1
   },
   {
@@ -91,13 +91,13 @@
    "description": "The response needs to be longer than 50 characters.\n\n",
    "fieldname": "saq1",
    "fieldtype": "Small Text",
-   "label": "Describe the steps to create a Sales Order in ERPNext."
+   "label": "Describe the steps to create a Sales Order in SimpelERP."
   },
   {
    "description": "The response needs to be longer than 50 characters.",
    "fieldname": "saq2",
    "fieldtype": "Small Text",
-   "label": "What are the benefits of using Sales Analytics in ERPNext?"
+   "label": "What are the benefits of using Sales Analytics in SimpelERP?"
   },
   {
    "fieldname": "column_break_ujrg",
@@ -114,6 +114,7 @@
    "search_index": 1
   },
   {
+   "description": "The file extension should be one of the following: 'MP4', 'AVI', 'MOV', or 'MKV', and the file size must not exceed 20MB.",
    "fieldname": "video",
    "fieldtype": "Attach",
    "label": "Video"
@@ -126,7 +127,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-11-26 12:44:48.270075",
+ "modified": "2024-11-27 11:54:13.629848",
  "modified_by": "Administrator",
  "module": "Training",
  "name": "Sales Module Questions",
