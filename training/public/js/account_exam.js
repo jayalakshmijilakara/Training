@@ -16,10 +16,10 @@ frappe.ui.form.on('Accounts Module Questions', {
             });
            
             frappe.validated = false;
-        } else if (!saq1_value || !saq2_value || !pt_value) {
+        } else if (!saq1_value || !saq2_value || !pt_value || !frm.doc.video) {
             frappe.msgprint({
                 title: __('Validation Error'),
-                message: __('All Short Answer Questions are mandatory.'),
+                message: __('All Short Answer Questions and Video are mandatory.'),
                 indicator: 'red'
             });
 

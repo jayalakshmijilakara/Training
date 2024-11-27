@@ -54,7 +54,6 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Exam On Accounts",
-   "mandatory_depends_on": "eval:doc.module_name == 'Accounts'",
    "options": "Accounts Module Questions"
   },
   {
@@ -63,7 +62,6 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Exam On Manufacturing",
-   "mandatory_depends_on": "eval:doc.module_name == 'Manufacturing'",
    "options": "Manufacturing Module Questions"
   },
   {
@@ -72,16 +70,14 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Exam On Buying",
-   "mandatory_depends_on": "eval:doc.module_name == 'Buying'",
    "options": "Buying Module Questions"
   },
   {
-   "depends_on": "eval:doc.module_name == 'Sales'",
+   "depends_on": "eval:doc.module_name == 'Selling'",
    "fieldname": "exam_on_sales_module",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Exam On Selling",
-   "mandatory_depends_on": "eval:doc.module_name == 'Sales'",
    "options": "Sales Module Questions"
   },
   {
@@ -95,7 +91,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-11-26 12:03:00.176201",
+ "modified": "2024-11-27 10:45:31.307041",
  "modified_by": "Administrator",
  "module": "Training",
  "name": "Topics Learned",

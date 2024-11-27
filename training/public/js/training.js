@@ -142,6 +142,8 @@ frappe.ui.form.on('Training', {
             let validation_message = "";
             for (let topic_row of frm.doc.topics_learned || []) {
                 if (topic_row.module_name === 'Accounts') {
+                    frm.toggle_reqd('exam_on_accounts', true);
+
                     const accounts_id = topic_row.exam_on_accounts;
                     if (!accounts_id) {
                         validation_message = __('Accounts exam is missing for {0}', [topic_row.module_name]);
@@ -156,6 +158,8 @@ frappe.ui.form.on('Training', {
                 }
 
                 if (topic_row.module_name === 'Buying') {
+                    frm.toggle_reqd('exam_on_buying_module', true);
+
                     const buying_id = topic_row.exam_on_buying_module;
                     if (!buying_id) {
                         validation_message = __('Buying exam is missing for {0}', [topic_row.module_name]);
@@ -170,6 +174,8 @@ frappe.ui.form.on('Training', {
                 }
 
                 if (topic_row.module_name === 'Selling') {
+                    frm.toggle_reqd('exam_on_sales_module', true);
+
                     const selling_id = topic_row.exam_on_sales_module;
                     if (!selling_id) {
                         validation_message = __('Selling exam is missing for {0}', [topic_row.module_name]);
@@ -184,6 +190,8 @@ frappe.ui.form.on('Training', {
                 }
 
                 if (topic_row.module_name === 'Manufacturing') {
+                    frm.toggle_reqd('exam_on_accounts', true);
+
                     const manufacturing_id = topic_row.exam_on_manufacturing;
                     if (!manufacturing_id) {
                         validation_message = __('Manufacturing exam is missing for {0}', [topic_row.module_name]);
