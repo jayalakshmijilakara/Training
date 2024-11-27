@@ -32,21 +32,23 @@
    "fieldname": "mcq1",
    "fieldtype": "Data",
    "in_list_view": 0,
-   "label": "1) What is the primary purpose of the Manufacturing Module in ERPNext?",
+   "label": "1) What is the primary purpose of the Manufacturing Module in SimpelERP?",
    "reqd": 1
   },
   {
    "description": "A) Item Code\nB) BOM (Bill of Materials)\nC) Production Resources (Workstations, Employees)\nD) All of the above",
    "fieldname": "mcq2",
    "fieldtype": "Data",
-   "label": "3) Which of the following is required to create a Manufacturing Order in ERPNext?",
+   "in_list_view": 0,
+   "label": "3) Which of the following is required to create a Manufacturing Order in SimpelERP?",
    "reqd": 1
   },
   {
    "description": "A) The cost price of raw materials\nB) The list of raw materials required to manufacture a product\nC) The list of finished goods\nD) The production schedule for an item",
    "fieldname": "mcq3",
    "fieldtype": "Data",
-   "label": "2) In ERPNext, a Bill of Materials (BOM) is used to define:",
+   "in_list_view": 0,
+   "label": "2) In SimpelERP, a Bill of Materials (BOM) is used to define:",
    "reqd": 1
   },
   {
@@ -62,13 +64,13 @@
    "default": "0",
    "fieldname": "trf1",
    "fieldtype": "Check",
-   "label": "A Manufacturing Order (MO) in ERPNext is created automatically when a Sales Order is placed."
+   "label": "A Manufacturing Order (MO) in SimpelERP is created automatically when a Sales Order is placed."
   },
   {
    "default": "0",
    "fieldname": "trf2",
    "fieldtype": "Check",
-   "label": "In ERPNext, you can set multiple manufacturing workstations to produce the same item."
+   "label": "In SimpelERP, you can set multiple manufacturing workstations to produce the same item."
   },
   {
    "fieldname": "column_break_mohp",
@@ -83,13 +85,13 @@
    "description": "The response needs to be longer than 50 characters.",
    "fieldname": "saq1",
    "fieldtype": "Small Text",
-   "label": "Explain the process to create a Manufacturing Order in ERPNext."
+   "label": "Explain the process to create a Manufacturing Order in SimpelERP."
   },
   {
    "description": "The response needs to be longer than 50 characters.",
    "fieldname": "saq2",
    "fieldtype": "Small Text",
-   "label": "What is the difference between a Work Order and a Manufacturing Order in ERPNext?"
+   "label": "What is the difference between a Work Order and a Manufacturing Order in SimpelERP?"
   },
   {
    "fieldname": "column_break_ixaw",
@@ -109,7 +111,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-11-26 10:07:06.641595",
+ "modified": "2024-11-27 12:05:18.681657",
  "modified_by": "Administrator",
  "module": "Training",
  "name": "Manufacturing Module Questions",
