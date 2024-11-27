@@ -36,7 +36,7 @@
    "fieldname": "mcq1",
    "fieldtype": "Data",
    "in_list_view": 0,
-   "label": "1) What is the primary purpose of the Buying module in ERPNext?",
+   "label": "1) What is the primary purpose of the Buying module in SimpelERP?",
    "reqd": 1
   },
   {
@@ -56,7 +56,7 @@
    "fieldname": "mcq3",
    "fieldtype": "Data",
    "in_list_view": 0,
-   "label": "2) In ERPNext, which field is essential for creating a Purchase Order?",
+   "label": "2) In SimpelERP, which field is essential for creating a Purchase Order?",
    "reqd": 1
   },
   {
@@ -78,7 +78,7 @@
    "default": "0",
    "fieldname": "trf2",
    "fieldtype": "Check",
-   "label": "The Buying module in ERPNext allows you to track the status of your purchase orders."
+   "label": "The Buying module in SimpelERP allows you to track the status of your purchase orders."
   },
   {
    "fieldname": "section_break_ilvv",
@@ -89,7 +89,7 @@
    "description": "The response needs to be longer than 50 characters.",
    "fieldname": "saq1",
    "fieldtype": "Small Text",
-   "label": "List three key benefits of using the Buying module in ERPNext."
+   "label": "List three key benefits of using the Buying module in SimpelERP."
   },
   {
    "description": "The response needs to be longer than 50 characters.",
@@ -110,7 +110,7 @@
    "description": "The response needs to be longer than 50 characters.(Document each step taken during the process.)",
    "fieldname": "pt",
    "fieldtype": "Small Text",
-   "label": "Create a Purchase Order in ERPNext for a specific item, including supplier details and item quantities."
+   "label": "Create a Purchase Order in SimpelERP for a specific item, including supplier details and item quantities."
   },
   {
    "fieldname": "amended_from",
@@ -127,6 +127,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "description": "The file extension should be one of the following: 'MP4', 'AVI', 'MOV', or 'MKV', and the file size must not exceed 20MB.",
    "fieldname": "video",
    "fieldtype": "Attach",
    "label": "Video"
@@ -135,7 +136,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-11-26 16:14:26.982207",
+ "modified": "2024-11-27 11:58:25.900657",
  "modified_by": "Administrator",
  "module": "Training",
  "name": "Buying Module Questions",
