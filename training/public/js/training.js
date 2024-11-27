@@ -131,3 +131,93 @@ function validate_dates(frm, cdt, cdn) {
     }
 }
 
+
+frappe.ui.form.on('Training', {
+    before_workflow_action: async (frm) => {
+        const workflow_action = frm.selected_workflow_action;
+
+        if (workflow_action === 'Send for Approval') {
+            frappe.dom.unfreeze();
+
+            let validation_message = "";
+            for (let topic_row of frm.doc.topics_learned || []) {
+                if (topic_row.module_name === 'Accounts') {
+                    const accounts_id = topic_row.exam_on_accounts;
+                    if (!accounts_id) {
+                        validation_message = __('Accounts exam is missing for {0}', [topic_row.module_name]);
+                        break;
+                    }
+
+                    const accountDoc = await frappe.db.get_doc('Accounts Module Questions', accounts_id);
+                    if (accountDoc.docstatus !== 1) {
+                        validation_message = __('Please submit the Exam Doctype for {0}', [topic_row.module_name]);
+                        break;
+                    }
+                }
+
+                if (topic_row.module_name === 'Buying') {
+                    const buying_id = topic_row.exam_on_buying_module;
+                    if (!buying_id) {
+                        validation_message = __('Buying exam is missing for {0}', [topic_row.module_name]);
+                        break;
+                    }
+
+                    const buyingDoc = await frappe.db.get_doc('Buying Module Questions', buying_id);
+                    if (buyingDoc.docstatus !== 1) {
+                        validation_message = __('Please submit the Exam Doctype for {0}', [topic_row.module_name]);
+                        break;
+                    }
+                }
+
+                if (topic_row.module_name === 'Selling') {
+                    const selling_id = topic_row.exam_on_sales_module;
+                    if (!selling_id) {
+                        validation_message = __('Selling exam is missing for {0}', [topic_row.module_name]);
+                        break;
+                    }
+
+                    const sellingDoc = await frappe.db.get_doc('Sales Module Questions', selling_id);
+                    if (sellingDoc.docstatus !== 1) {
+                        validation_message = __('Please submit the Exam Doctype for {0}', [topic_row.module_name]);
+                        break;
+                    }
+                }
+
+                if (topic_row.module_name === 'Manufacturing') {
+                    const manufacturing_id = topic_row.exam_on_manufacturing;
+                    if (!manufacturing_id) {
+                        validation_message = __('Manufacturing exam is missing for {0}', [topic_row.module_name]);
+                        break;
+                    }
+
+                    const manufacturingDoc = await frappe.db.get_doc('Manufacturing Module Questions', manufacturing_id);
+                    if (manufacturingDoc.docstatus !== 1) {
+                        validation_message = __('Please submit the Exam Doctype for {0}', [topic_row.module_name]);
+                        break;
+                    }
+                }
+            }
+            if (validation_message) {
+                await new Promise((resolve, reject) => {
+                    frappe.prompt(
+                        [
+                            {
+                                fieldtype: 'HTML',
+                                options: `<div style="margin-bottom: 10px; color: red;">${validation_message}</div>`,
+                                fieldname: 'message',
+                            },
+                        ],
+                        () => {
+                            reject(false); 
+                        },
+                        __('Validation Required'),
+                        __('Close') 
+                    );
+                });
+
+                frappe.validated = false;
+                return false;
+            }
+        }
+    }
+});

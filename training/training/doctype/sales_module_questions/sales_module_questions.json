@@ -20,7 +20,9 @@
   "saq2",
   "section_break_kotl",
   "creating_customer",
-  "amended_from"
+  "amended_from",
+  "column_break_hixe",
+  "video"
  ],
  "fields": [
   {
@@ -110,12 +112,21 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "video",
+   "fieldtype": "Attach",
+   "label": "Video"
+  },
+  {
+   "fieldname": "column_break_hixe",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-11-26 10:26:03.327498",
+ "modified": "2024-11-26 12:44:48.270075",
  "modified_by": "Administrator",
  "module": "Training",
  "name": "Sales Module Questions",

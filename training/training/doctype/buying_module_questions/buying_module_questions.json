@@ -21,7 +21,9 @@
   "saq2",
   "practical_tasks_section",
   "pt",
-  "amended_from"
+  "amended_from",
+  "column_break_kbvx",
+  "video"
  ],
  "fields": [
   {
@@ -119,12 +121,21 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "column_break_kbvx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "video",
+   "fieldtype": "Attach",
+   "label": "Video"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-11-26 10:18:06.271340",
+ "modified": "2024-11-26 16:14:26.982207",
  "modified_by": "Administrator",
  "module": "Training",
  "name": "Buying Module Questions",

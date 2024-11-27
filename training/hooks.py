@@ -13,10 +13,17 @@ doctype_js = {
     "Training" : "public/js/training.js" ,
     "Sales Module Questions" : "public/js/sales_exam.js" ,
     "Buying Module Questions" : "public/js/buy_exam.js" ,
-     "Accounts Module Questions" : "public/js/account_exam.js" ,
-      "Manufacturing Module Questions" : "public/js/manufacture_exam.js" ,
+    "Accounts Module Questions" : "public/js/account_exam.js" ,
+    "Manufacturing Module Questions" : "public/js/manufacture_exam.js" ,
 }
 
+
+# Event handling for file insertion
+doc_events = {
+    "File": {
+        "before_insert": "training.custom_scripts.custom_scripts.prevent_file_attachments",
+    },
+}
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
