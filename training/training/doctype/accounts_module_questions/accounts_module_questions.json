@@ -46,13 +46,13 @@
    "description": "The response needs to be longer than 50 characters.",
    "fieldname": "saq1",
    "fieldtype": "Small Text",
-   "label": "1) Explain the purpose of a \"Payment Entry\" in ERPNext."
+   "label": "1) Explain the purpose of a \"Payment Entry\" in SimpelERP."
   },
   {
    "description": "The response needs to be longer than 50 characters.",
    "fieldname": "saq2",
    "fieldtype": "Small Text",
-   "label": "2) What is a \"Fiscal Year,\" and how is it set up in ERPNext?"
+   "label": "2) What is a \"Fiscal Year,\" and how is it set up in SimpelERP?"
   },
   {
    "fieldname": "column_break_sqwj",
@@ -62,7 +62,7 @@
    "description": "The response needs to be longer than 50 characters.",
    "fieldname": "saq3",
    "fieldtype": "Small Text",
-   "label": "3) Describe the process of creating a Sales Invoice in ERPNext."
+   "label": "3) Describe the process of creating a Sales Invoice in SimpelERP."
   },
   {
    "fieldname": "section_break_hnhb",
@@ -73,7 +73,7 @@
    "default": "0",
    "fieldname": "trf1",
    "fieldtype": "Check",
-   "label": "In ERPNext, every financial transaction must be recorded through a Journal Entry."
+   "label": "In SimpelERP, every financial transaction must be recorded through a Journal Entry."
   },
   {
    "default": "0",
@@ -93,19 +93,19 @@
   {
    "fieldname": "pq1",
    "fieldtype": "Small Text",
-   "label": "Given a set of transactions, demonstrate how to create a Journal Entry in ERPNext."
+   "label": "Given a set of transactions, demonstrate how to create a Journal Entry in SimpelERP."
   },
   {
    "fieldname": "pq2",
    "fieldtype": "Small Text",
-   "label": "Show how to generate a Profit and Loss report for a specific period in ERPNext."
+   "label": "Show how to generate a Profit and Loss report for a specific period in SimpelERP."
   },
   {
    "description": "A) To track inventory. \n B) To categorize financial transactions.\n C) To manage user access.\n D) To generate sales reports.",
    "fieldname": "mc1",
    "fieldtype": "Data",
    "in_list_view": 0,
-   "label": "1) What is the primary function of the Chart of Accounts in ERPNext?",
+   "label": "1) What is the primary function of the Chart of Accounts in SimpelERP?",
    "reqd": 1
   },
   {
@@ -113,7 +113,7 @@
    "fieldname": "mc2",
    "fieldtype": "Data",
    "in_list_view": 0,
-   "label": "2) Which of the following document types is NOT part of the accounting module in ERPNext?",
+   "label": "2) Which of the following document types is NOT part of the accounting module in SimpelERP?",
    "reqd": 1
   },
   {
@@ -121,7 +121,7 @@
    "fieldname": "mc3",
    "fieldtype": "Data",
    "in_list_view": 0,
-   "label": "3) In ERPNext, what is a \"Journal Entry\"?",
+   "label": "3) In SimpelERP, what is a \"Journal Entry\"?",
    "reqd": 1
   },
   {
@@ -139,6 +139,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "description": "The file extension should be one of the following: 'MP4', 'AVI', 'MOV', or 'MKV', and the file size must not exceed 20MB.",
    "fieldname": "video",
    "fieldtype": "Attach",
    "label": "Video"
@@ -147,7 +148,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-11-26 16:19:10.567728",
+ "modified": "2024-11-27 11:42:25.960111",
  "modified_by": "Administrator",
  "module": "Training",
  "name": "Accounts Module Questions",
